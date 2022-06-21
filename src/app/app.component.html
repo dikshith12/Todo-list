@@ -1,0 +1,21 @@
+<div class="d-flex app-container">
+  <div class="categories-container">
+    <div class="category-heading">Categories</div>
+    <div class="list-content">
+      <div
+        class="border-layout"
+        type="button"
+        *ngFor="let category of categories; let i = index"
+        (click)="selectCategory(category)"
+      >
+        {{ category.name }}
+      </div>
+      <div class="empty-categories" *ngIf="!categories.length">No categories added</div>
+    </div>
+    <button type="button" class="btn categories-add-btn" (click)="addCategory()">
+      +
+    </button>
+  </div>
+  <app-todo-list [selectedCategory]="selectedCategory" class="todo"></app-todo-list>
+</div>
+

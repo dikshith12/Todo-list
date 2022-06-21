@@ -1,0 +1,11 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{titleName}}</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="activeModal.dismiss('Cross click')"></button>
+</div>
+<div class="modal-body">
+    <label>{{inputLabel}}</label>
+    <input type="text" #inputText />
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn save-btn" (click)="activeModal.close(inputText.value)">Save</button>
+</div>

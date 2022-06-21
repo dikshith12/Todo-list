@@ -1,0 +1,58 @@
+.app-container {
+    border: 3px solid #000000;
+    margin: 30px auto;
+    max-width: 600px;
+    height: 400px;
+    background-color: #3D3B3C;
+    color: #ffffff;
+  }
+
+.categories-container {
+    border-right: 3px solid #C1BDB3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+}
+
+.category-heading {
+    font-size: 2rem;
+    border-bottom: 3px solid #C1BDB3;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.list-content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.list-content :hover  {
+    background-color: #323031;
+}
+
+.border-layout {
+    border-bottom: 1px solid #C1BDB3;
+    padding: 5px;
+}
+
+.empty-categories {
+    text-align: center;
+}
+
+.categories-add-btn {
+    background-color: #C1BDB3;
+    color: #323031;
+    font-size:15px;
+    font-weight: bold
+}
+
+.todo {
+    flex-grow: 1;
+}
+
+
+
+

@@ -1,0 +1,20 @@
+<div class="todo__container">
+  <h2 class="todo__title">{{selectedCategory.name}}</h2>
+  <div class="todo__list">
+    <div class="todo__item d-flex p-2" *ngFor="let todoListItem of selectedCategory.todoList; let i = index">
+      <div>
+        <input type="checkbox" [checked]="todoListItem.isChecked" (change)="onCheckBoxChange(i)" />
+      </div>
+      <div class="todo__name">{{ todoListItem.todoItemName }}</div>
+      <div type="button" (click)="removeItem(i)">x</div>
+    </div>
+    <div class="todo__no-items" *ngIf="!selectedCategory.todoList?.length">
+      No to-do Items, please add to-do items.
+    </div>
+  </div>
+  <ng-container *ngIf="selectedCategory.name">
+  <button type="button" class="btn todo__add-btn" (click)="addTodoListItem()">
+    +
+  </button>
+</ng-container>
+</div>
