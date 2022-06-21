@@ -23,9 +23,9 @@ Make sure this application data is not stored anywhere. it will earse all data i
 
 ## Things to improve
 
-Unit tests 
-Accessibility
-Design Consistency
-Mobile compatability
+1. Unit tests 
+2. Accessibility
+3. Design Consistency
+4. Mobile compatability
 
 
